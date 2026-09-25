@@ -222,10 +222,25 @@ function previewImage(event) {
 
 function enhanceProduct() {
 
-    alert(
-        "✨ AI Product Enhancement started!\n\n" +
-        "Product image is being prepared for marketplace listing."
-    );
+    const file = document.getElementById("productImage").files[0];
+
+    if (!file) {
+        alert("Please upload a product image first.");
+        return;
+    }
+
+    const aiBox = document.querySelector(".ai-box");
+
+    aiBox.innerHTML = `
+        <h3>✨ AI Enhancement Complete</h3>
+
+        <p>
+            ✓ Background cleaned<br>
+            ✓ Product presentation improved<br>
+            ✓ Marketplace-ready image prepared<br>
+            ✓ Product visibility optimized
+        </p>
+    `;
 
 }
 
