@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product - ArtisanConnect AI</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5efe7;
+            color: #3b281c;
+            padding-bottom: 30px;
+        }
+
+        .header {
+            background: #7b4b2a;
+            color: white;
+            padding: 22px 20px;
+            border-radius: 0 0 25px 25px;
+        }
+
+        .header h1 {
+            font-size: 22px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 7px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #7b4b2a;
+        }
+
+        .upload {
+            border: 2px dashed #c8b29e;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .upload-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .upload input {
+            border: none;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            background: #7b4b2a;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 18px;
+            color: #7b4b2a;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>✦ Add New Product</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+
+            <label>Product Name</label>
+            <input
+                type="text"
+                placeholder="Example: Handwoven Silk Saree"
+            >
+
+            <label>Category</label>
+
+            <select>
+                <option>Select Category</option>
+                <option>Handloom</option>
+                <option>Handicraft</option>
+                <option>Pottery</option>
+                <option>Jewellery</option>
+                <option>Wood Craft</option>
+                <option>Metal Craft</option>
+                <option>Other</option>
+            </select>
+
+            <label>Product Photo</label>
+
+            <div class="upload">
+
+                <div class="upload-icon">📸</div>
+
+                <p>Upload your craft photo</p>
+
+                <input
+                    type="file"
+                    accept="image/*"
+                >
+
+            </div>
+
+            <label>Material Used</label>
+
+            <input
+                type="text"
+                placeholder="Example: Silk, Cotton, Natural Dye"
+            >
+
+            <label>Short Description</label>
+
+            <textarea
+                placeholder="Tell us about your product..."
+            ></textarea>
+
+            <button onclick="createProduct()">
+                Continue to AI Product Studio →
+            </button>
+
+        </div>
+
+        <a href="dashboard.html" class="back">
+            ← Back to Dashboard
+        </a>
+
+    </div>
+
+    <script>
+        function createProduct() {
+            alert("Product details saved! AI Product Studio is next.");
+        }
+    </script>
+
+</body>
+</html>
