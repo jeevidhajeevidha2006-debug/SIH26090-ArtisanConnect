@@ -3,18 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ArtisanConnect AI</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #f5efe7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .logo {
+            width: 75px;
+            height: 75px;
+            margin: 0 auto 15px;
+            background: #7b4b2a;
+            color: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+        }
+
+        h1 {
+            color: #3b281c;
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #3b281c;
+            margin-bottom: 8px;
+        }
+
+        .welcome {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #7b4b2a;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #7b4b2a;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #60391f;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>ArtisanConnect AI</h1>
+    <div class="container">
 
-    <p>Empowering Artisans. Connecting Craft to Market.</p>
+        <div class="logo">✦</div>
 
-    <h2>Welcome, Artisan 👋</h2>
+        <h1>ArtisanConnect AI</h1>
 
-    <button>Get Started</button>
+        <p class="tagline">
+            Empowering Artisans.<br>
+            Connecting Craft to Market.
+        </p>
+
+        <h2>Welcome Back 👋</h2>
+
+        <p class="welcome">
+            Login to showcase your craft
+        </p>
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+        >
+
+        <input
+            type="password"
+            placeholder="Enter your password"
+        >
+
+        <button onclick="login()">
+            Login
+        </button>
+
+        <p class="footer">
+            AI-powered marketplace for artisans
+        </p>
+
+    </div>
+
+    <script>
+        function login() {
+            alert("Welcome to ArtisanConnect AI!");
+        }
+    </script>
 
 </body>
 </html>
