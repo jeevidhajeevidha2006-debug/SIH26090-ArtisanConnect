@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Artisan Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5efe7;
+            color: #3b281c;
+        }
+
+        .header {
+            background: #7b4b2a;
+            color: white;
+            padding: 25px 20px;
+            border-radius: 0 0 25px 25px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 7px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .welcome {
+            background: white;
+            padding: 20px;
+            border-radius: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+        }
+
+        .welcome h2 {
+            margin-bottom: 8px;
+        }
+
+        .welcome p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .section-title {
+            margin: 20px 0 12px;
+            font-size: 18px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px 15px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+            cursor: pointer;
+        }
+
+        .icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        .card p {
+            font-size: 12px;
+            color: #777;
+        }
+
+        .add-product {
+            margin-top: 20px;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 14px;
+            background: #7b4b2a;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .logout {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #7b4b2a;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>ArtisanConnect AI ✦</h1>
+        <p>Artisan Dashboard</p>
+    </div>
+
+    <div class="container">
+
+        <div class="welcome">
+            <h2>Hello, Artisan 👋</h2>
+            <p>
+                Turn your traditional craft into a professional
+                digital marketplace listing.
+            </p>
+        </div>
+
+        <h2 class="section-title">AI Tools</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <div class="icon">📸</div>
+                <h3>AI Product Studio</h3>
+                <p>Enhance your product photos</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎙️</div>
+                <h3>Voice Catalog</h3>
+                <p>Create descriptions using voice</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💰</div>
+                <h3>Smart Pricing</h3>
+                <p>Get an estimated product price</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🛍️</div>
+                <h3>My Products</h3>
+                <p>Manage your listings</p>
+            </div>
+
+        </div>
+
+        <button class="add-product">
+            + Add New Product
+        </button>
+
+        <a class="logout" href="index.html">
+            ← Logout
+        </a>
+
+    </div>
+
+</body>
+</html>
